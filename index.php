@@ -1,16 +1,21 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>こんにちは</h1>
-    <p>正しく動かないと、エラーが返るようだ</p>
-    <?php for ($i = 0; $i < 10; $i++) : ?>
-        <p>da</p>
-    <?php endfor ?>
-</body>
-</html>
+<?php
+// 配列の基本型
+$child1 = [
+    'name' => 'Mike',
+    'age' => 8,
+    'hobby' => 'Games'
+];
+
+// 連想配列
+$family = [
+    "Bob" => [
+        "height" => "120cm",
+        "weight" => "26kg"
+    ],
+    "Tom" => [
+        "height" => "110cm",
+        "weight" => "20kg"
+    ]
+];
+
+echo $family["Bob"]["height"]; //120cm
